@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULT Serviços Elétricos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header {
+      background-color: #001f4d;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #e6f0ff;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #001f4d;
+    }
+    .hero button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #001f4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      color: #001f4d;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      width: 250px;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .contact-form label {
+      display: block;
+      margin-top: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #001f4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .footer {
+      background-color: #001f4d;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo MULT">
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="#cliente">Área do Cliente</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Soluções em Energia e Automação com Qualidade e Garantia</h1>
+    <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Solicitar Orçamento</button>
+  </section>
+
+  <section class="section" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Energia Solar</h3>
+        <p>Projetos completos, instalação e suporte técnico.</p>
+      </div>
+      <div class="service-card">
+        <h3>Instalações Elétricas</h3>
+        <p>Residenciais, comerciais e industriais com segurança.</p>
+      </div>
+      <div class="service-card">
+        <h3>Automação</h3>
+        <p>Automação industrial, residencial e rural com tecnologia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projetos">
+    <h2>Galeria de Projetos</h2>
+    <div class="gallery">
+      <img src="projeto1.jpg" alt="Projeto 1">
+      <img src="projeto2.jpg" alt="Projeto 2">
+      <img src="projeto3.jpg" alt="Projeto 3">
+      <img src="projeto4.jpg" alt="Projeto 4">
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <h2>Sobre a MULT</h2>
+    <p>A MULT Serviços Elétricos atua com excelência em energia solar, instalações elétricas e automação, garantindo segurança e economia para sua casa ou empresa.</p>
+  </section>
+
+  <section class="section" id="contato">
+    <h2>Fale Conosco</h2>
+    <div class="contact-form">
+      <form>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </div>
+    <p style="margin-top: 2rem;">📞 (86) 9 9489-9910<br>
+       📧 multempreendimentosltda@gmail.com<br>
+       📍 Vista Alegre, Rua da Paz 00 – Altos/PI<br>
+       📷 @multservicoseletricos</p>
+    <button onclick="window.open('https://wa.me/5586994899910', '_blank')">Chamar no WhatsApp</button>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 MULT Serviços Elétricos - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
